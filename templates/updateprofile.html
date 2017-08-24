@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Update Profile{% endblock %}
+
+{% block head %}Update Profile{% endblock %}
+{% block backtodash %}<li><a href="/dashboard">Home</a></li>{% endblock %}
+{% block content %}
+
+	<form id="updateprofile" action="." method="post" enctype="multipart/form-data">
+        {% csrf_token %} 
+        <table border="0">
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="Update" />
+    </form>
+	
+
+{% endblock %}

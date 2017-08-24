@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Show Results{% endblock %}
+
+{% block head %}Show Results{% endblock %}
+
+{% block home %}<li><a href="/dashboard">Home</a></li>{% endblock %}
+{% block logout %}<li><a href="/logout">Log Out</a></li> {% endblock %}
+{% block showresult %}<li><a href="/displayresultchoice">Results</a></li>{% endblock %}
+
+
+{% block content %}
+
+ <form method="post" action=".">{% csrf_token %}
+    	{{ form.non_field_errors }}
+        <table border="0">
+            {{ form.as_table }}
+        </table>
+       <p> <input type="submit" value="Show" /> </p>
+    </form>
+
+{% endblock %}

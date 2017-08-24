@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Verify Candidates{% endblock %}
+
+{% block head %}Verify Candidates{% endblock %}
+
+{% block home %}<li><a href="/admindisplay">Home</a></li>{% endblock %}
+{% block logout %}<li><a href="/logout_admin">Log Out</a></li> {% endblock %}
+
+{% block content %}
+<form method="post" action=".">{% csrf_token %}
+        <table border="0">
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="Verify" />
+    </form>
+
+{% endblock %}

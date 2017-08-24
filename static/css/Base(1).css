@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+
+.team_members
+{
+	margin-top: 0px;
+	margin-left: 250px;
+	padding-top: 50px;
+	
+}
+.team1
+{
+	margin-top: 50px;
+	margin-left: 50px;
+}
+table#t01
+{
+	margin-left: 20px;
+	border: 10px solid rgba(173,220,57,1.00);
+	border-color: rgba(173,220,57,1.00);
+	background-color: rgba(49,49,49,1.00) 100%);
+	background-image: rgba(40,40,40,1.00);
+	padding: 1px;
+	border-spacing: 4px 20px;
+	border-radius: 50px 0 50px 0;
+}
+table,
+table#t01 th,
+table#t01 td {
+  border: 1px solid black;
+  border-spacing: 4px;
+  border-radius: 50px 0 50px 0;
+ 
+}
+
+table#p01
+{
+	
+	padding-left: 100px;
+	padding-top: 400px;
+	border-radius: 0px 0 0px 0;
+	font-face: Verdana, Geneva, sans-serif;
+	font-size: 36px;
+	border-spacing: 10px 20px;
+	border: 10px solid rgba(173,220,57,1.00);
+	
+	
+}
+table#p01 td {
+
+	vertical-align: text-top;   
+}
+.detail
+{
+	font-size: 60px;
+	align: center;
+	border-radius: 150px 150px 150px 150px;
+	background-color: rgba(197,247,74,0.92);
+	margin-bottom: 10px;
+	margin-left: 200px;
+	margin-right: 200px;
+	
+}
+.profile
+{
+	margin-left: 30px;
+}
+.pic
+{
+	margin-top: -515px;
+	margin-left: 50px;
+}
+.picname
+{
+	margin-left: 500px;
+	margin-top: -229px;
+
+}
+.picnameshadab
+{
+	margin-left: 530px;
+	margin-top: -220px;
+
+}
+.picnamesuraj
+{
+	margin-left: 532px;
+	margin-top: -220px;
+
+}
+.proback{
+
+	background-color: white;	
+	margin-top: -213px;
+	margin-right: 50px;
+	
+}
+.averagepic
+{
+	background-image:url("/static/images/AVERAGE.png");
+	height: 500px;
+	width: 981px;
+	margin-left: 150px;
+	
+}
+.acontainer
+{
+	margin-top: -500px;
+}
+.av
+{
+	margin-top: 54px;
+	margin-left: 371px;
+}
+label
+{
+	font-size: 40px;
+	margin-left: 350px;
+	font-face: Monotype Corsiva;
+}
+.avg_ans
+{
+	margin-left: 490px;
+}
+.avg_ans h2
+{
+	font-size: 30px;
+}
+.cordi_head
+{
+	margin-top: 100px;
+	padding-top: 5px;
+	padding-left: 30px;
+}
+.plot_button
+{
+	margin-left: 750px;
+    padding-bottom: 20px;
+}
+.figure
+{
+	padding-left: 250px;
+	padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about
+{
+	margin-left: 350px;
+	padding-top: 10px;
+}
+.dev
+{
+	padding-left: 430px;
+}
+.about1
+{
+	padding-left: 250px;
+}
+.about2
+{
+	padding-left: 250px;
+	margin-top: -100px;
+}
+.about3
+{
+	padding-left: 250px;
+	margin-top: -100px;
+}

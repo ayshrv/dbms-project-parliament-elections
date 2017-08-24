@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Admin{% endblock %}
+
+{% block head %}Admin{% endblock %}
+
+{% block home %}<li><a href="/admindisplay">Home</a></li>{% endblock %}
+{% block logout %}<li><a href="/logout_admin">Log Out</a></li> {% endblock %}
+
+{% block content %}
+{{message}}
+{% if election.exists %}
+<table id="admin_display" class="center">
+<thead>
+  <tr>
+     <th colspan="2">Current Election</th>
+  </tr>
+ </thead>
+<tr>
+<td>Election ID</td><td>{{election.id}}</td>
+</tr>
+<tr>
+<td>Year</td><td> {{election.year}}</td>
+</tr>
+<tr>
+<td>Teacher Incharge</td><td> {{election.teacher}}</td>
+</tr>
+{% if election.voting %}
+<tr>
+<td>Voting: Started
+</td>
+<td><a href="/endvoting"> End Voting </a>
+</td>
+</tr>
+{% else %}
+<tr>
+<td colspan="2" align="center"><a href="/verifycandi">Verify Candidates</a>
+</td>
+</tr>
+<tr>
+<td>Voting: Not Started Yet
+</td>
+<td><a href="/startvoting"> Start Voting</a>
+</td>
+</tr>
+<tr>
+<td colspan="2"><a> End Election Session</a>
+</td>
+</tr>
+{% endif %}
+</table>
+{% else %}
+<a href="/createsession">Create An Election Session</a><br>
+{% endif %}
+		 
+	
+{% endblock %}

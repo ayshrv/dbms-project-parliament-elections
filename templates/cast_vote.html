@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Cast A Vote{% endblock %}
+
+{% block head %}Cast A Vote {% endblock %}
+{% block home %}<li><a href="/dashboard">Home</a></li>{% endblock %}
+{% block logout %}<li><a href="/logout">Log Out</a></li> {% endblock %}
+
+{% block content %}
+<form method="post" action=".">{% csrf_token %}
+        <table border="0">
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="Vote" />
+    </form>
+
+{% endblock %}

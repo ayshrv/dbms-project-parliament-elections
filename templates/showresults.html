@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Result ID: {{resultid}}{% endblock %}
+
+{% block head %}Result ID: {{resultid}}{% endblock %}
+
+{% block home %}<li><a href="/dashboard">Home</a></li>{% endblock %}
+{% block logout %}<li><a href="/logout">Log Out</a></li> {% endblock %}
+{% block showresult %}<li><a href="/displayresultchoice">Results</a></li>{% endblock %}
+
+
+{% block content %}
+	<table class="center">
+	<thead>
+	<tr><td colspan="4">Result ID</td><td colspan="3">{{resultid}}</td></tr>
+	<tr><td colspan="4">Election ID</td><td colspan="3">{{election_id}}</td></tr>
+	<tr><td colspan="4">No. Of Candidates Stood ID</td><td colspan="3">{{no_of_candi_stood}}</td></tr>
+	<tr><td colspan="4">No. Of Candidates Won</td><td colspan="3">{{no_of_candi_won}}</td></tr>
+	<tr><td colspan="4">No. Of Girl Candidates Stood</td><td colspan="3">{{girl_candi_stood}}</td></tr>
+	<tr><td colspan="4">No. Of Girl Candidates Won</td><td colspan="3">{{girl_candi_won}}</td></tr>
+	</thead>
+	<tr>
+<th>Candidate ID</th><th>Voter ID</th><th>Votes Received</th><th>Roll No.</th><th>First Name</th><th>Last Name</th><th>Year Of Admission</th>
+	</tr>
+		{% for i in candi %}
+		<tr>
+			{% for j in i %}
+			<td>{{j}}</td>
+			{% endfor %}
+		</tr>
+		{% endfor %}
+	</table>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Registered{% endblock %}
+{% block extrahead %}{{ block.super }}
+    <script type="text/javascript">
+        setTimeout(function() {
+            window.location.href = "/login";
+        }, 2000);
+    </script>
+{% endblock %}
+{% block head %}Registered{% endblock %}
+{% block adminlogin %}<li><a href="/adminlogin">Admin Login</a></li>{% endblock %}
+{% block home %}<li><a href="/login">Login</a></li>{% endblock %}
+{% block register %}<li><a href="/register">Register</a></li>{% endblock %}
+
+{% block content %}
+{{message}}
+<br>
+Redirecting...
+{% endblock %}

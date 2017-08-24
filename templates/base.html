@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% block extrahead %}{% endblock %}
+     <link rel="stylesheet" href="{% static "css/Main.css" %}" />
+</head>
+<body>
+<div id="header_image">
+<img class='make-it-fit' src="{% static "images/header.png" %}" >
+</div>
+
+<div id="menu">
+
+
+
+<ul class="topnav" id="myTopnav">
+  
+  {% block home %}{% endblock %}
+  {% block adminlogin %}{% endblock %}
+  {% block backtodash %}{% endblock %}
+  {% block showresult %}{% endblock %}
+{% block logout %}{% endblock %}
+{% block register %}{% endblock %}
+
+</ul>
+</div>
+
+<div class="body_back">
+<h1>{% block head %}{% endblock %}</h1>
+        {% block content %}{% endblock %}
+
+
+<div id="about_us">
+<div id="left">
+
+    <p id="copy">Copyright © 2016</p>
+
+    </div>
+
+</div>
+</div>
+</body>
+</html>

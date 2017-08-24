@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Student Login{% endblock %}
+
+
+
+{% block head %}Student Login{% endblock %}
+{% block adminlogin %}<li><a href="/adminlogin">Admin Login</a></li>{% endblock %}
+{% block home %}<li><a href="/login">Login</a></li>{% endblock %}
+{% block register %}<li><a href="/register">Register</a></li>{% endblock %}
+{% block content %}
+<div id="login">
+{{error}}
+
+    <form method="post" action=".">{% csrf_token %}
+    	{{ form.non_field_errors }}
+        <table border="0">
+            {{ form.as_table }}
+        </table>
+       <p> <input type="submit" value="Login" /> </p>
+    </form>
+</div>
+{% endblock %}

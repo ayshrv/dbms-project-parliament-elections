@@ -1,0 +1,755 @@
+@font-face {
+    font-family: Varanasi;
+    src: url('../fonts/ale.TTF');
+}
+@font-face {
+    font-family: holycity;
+    src: url('../fonts/adobe.TTF');
+}
+@font-face {
+    font-family: nrkis;
+    src: url('../fonts/nrkis.TTF');
+}
+
+/*backtotop*/
+#top{
+    position: absolute;
+    left: 1250px;
+    top: 645px;
+    width: 90px;
+    height: 65px;
+
+    /*background-image: url("/static/images/top.PNG");*/
+}
+#top:hover{
+    opacity: .9;
+}
+/*navigation bar */
+#nav_bar{
+    position: fixed;
+    width: 101%;
+    /*height: 70px;*/
+    margin-left: -15px;
+    padding-left: 0px;
+    margin-right: -10px;
+    padding-right: -10px;
+    margin-top: -65px;
+    border: 5px solid #2EC866;
+    /*font-size: 16px;*/
+    /*font-family: Tahoma, Geneva, sans-serif;*/
+    /*font-weight: bold;*/
+    text-align: center;
+    /*text-shadow: 3px 2px 3px #333333;*/
+
+    /*background-color: #45281f;*/
+    /*background-image: url("/static/images/sidebar.png");*/
+    z-index: 1;
+    /*border-radius: 8px;*/
+
+}
+#menu_bar{
+
+    position: relative;
+    background-color: #39424E;
+    float: right;
+    width: 100%;
+    height: 55px;
+    z-index: 10;
+    /*opacity: .7;*/
+}
+#menu_box{
+    margin-top: px;
+    margin-left: 200px;
+}
+#menu_back{
+    margin-top: -60px;
+    /*background-color: #467200;*/
+    width:  700px;
+    float: right;
+    /*height: 65px;*/
+    z-index: 1;
+}
+#bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 200px;
+    font-size: 30px;
+    z-index: 2;
+
+}
+
+#li_active{
+    top: -50px;
+    background-color: #232931;
+    margin-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /*padding-top: 10px;*/
+    /*padding: 10px;*/
+}
+#bar li{
+    float: left;
+    display: inline-block;
+    color: white;
+    margin-right: 50px;
+}
+#bar li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s ease-in;
+    padding-bottom: 10px;
+    padding-top: 15px;
+
+}
+#bar li #active{
+    color: #2EC866;
+    background-color: #232931;
+    z-index: 5;
+}
+#bar li a:hover{
+    color: #2EC866 ;
+}
+/*end nav bar*/
+
+#main_Varanasi {
+    font-family: Varanasi;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+#holycity{
+    font-family: holycity;
+    font-size: 20px;
+    background-color: #d029db;
+    text-align: center;
+}
+#large_V{
+    font-size: 60px;
+}
+
+#sub_name{
+    text-align: center;
+    margin-top: 0px;
+    font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+body {
+    /*background-image: url("/static/images/background.jpg");*/
+    background-color: #819677 ;
+    font-family: nrkis;
+
+}
+.main_div {
+    box-shadow: black;
+    margin-top: 55px;
+    background-color: white ;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+#panorama_top {
+    margin-left: -22px;
+}
+
+#history_text {
+    margin-top: 16px;
+}
+#history_maintext {
+    width: 58%;
+    margin-left: 25px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: justify;
+
+
+}
+#varanasi {
+    font-size: 26px;
+    font-family: nrkis;
+
+}
+
+#history_table {
+    background-color: #f4e1e1;
+    position: absolute;
+    margin-right: 20px;
+    margin-left: 52%;
+    width: 30%;
+    border-style: solid;
+    border-width: 5px;
+}
+#history_table table th{
+    text-align: left;
+
+}
+#flag {
+    vertical-align: middle;
+}
+#history_table table td{
+    vertical-align: middle;
+}
+#after_table {
+    width: 92%;
+    margin-left: 25px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: justify;
+
+
+}
+#Head {
+    margin-bottom: 0px;
+    font-size: 35px;
+}
+#sub_head {
+    font-size: 22px;
+    font-style: oblique;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+#figr {
+    float: right;
+    display: inline-block;
+     border: 1px solid grey;
+    padding: 2px;
+    margin: 10px;
+
+}
+#figr img{
+    position: relative;
+    left: 5px;
+    top:5px;
+}
+#figl {
+    float: left;
+    display: inline-block;
+     border: 1px solid grey;
+    padding: 2px;
+    margin: 10px;
+}
+#figl img{
+    position: relative;
+    left: 5px;
+    top:5px;
+}
+
+#figr figcaption{
+    position: relative;
+    font-size: 15px;
+    top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 182px;
+    word-wrap: break-word;
+}
+
+#figl figcaption{
+    position: relative;
+    font-size: 15px;
+    top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 182px;
+    word-wrap: break-word;
+}
+
+#normal {
+    margin-left: -10px;
+    width: 1000px;
+}
+tr.borderupdown th {
+  border-top: 1px solid #000;
+    padding-top: 5px;
+}
+tr.borderupdown td {
+  border-top: 1px solid #000;
+    padding-top: 5px;
+}
+table {
+    border-collapse: collapse;
+    padding: 20px;
+}
+table ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+table th{
+    padding-left: 5px;
+}
+
+/*Restaurants*/
+#restro{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -180px;
+    font-size: 55px;
+    text-align: center;
+    /*z-index: 2;*/
+}
+.large_restro{
+    font-size: 70px;
+}
+#restro_back{
+    width: 1115px;
+    border: 10px solid black;
+    overflow: hidden;
+}
+.blur {
+ -webkit-filter: blur(2px);
+}
+#restro_img{
+   -webkit-filter: blur(1px);
+    position: relative;
+    width: 1200px;
+    margin-bottom: -5px;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+#restro_img:hover{
+    -webkit-filter: blur(2px);
+    transition: -webkit-filter .5s linear ;
+}
+
+/*restaurants name*/
+#restro_names{
+    margin-top: 60px;
+}
+#restro_table{
+    margin-top: 20/px;
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 80px;
+}
+#restro_table li{
+    vertical-align: middle;
+    height: 180px;
+}
+#restro_table .address {
+    font-size: 18px;
+}
+#restro_table .type {
+    font-size: 18px;
+}
+#restro_table .cost .fade {
+    font-size: 18px;
+}
+
+#restro_table .name{
+    margin-top: 45px;
+    font-size: 25px;
+}
+#restro_table .name a{
+    color: #000000;
+
+}
+#restro_table .name a:visited{
+    color: #000000;
+
+}
+#restro_table .fade{
+    font-weight: bold;
+}
+#restro_table .rating{
+    position: absolute;
+    vertical-align: middle;
+    border-radius: 5px;
+    width: 37px;
+    height: 30px;
+    margin-left: 500px;
+    margin-top: -155px;
+    padding-left: 7px;
+    padding-top: 5px;
+    font-size: 28px;
+    color: white;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+#restro_table .rating:hover{
+    opacity: .8;
+}
+/*ratings
+#305D02--4.5 to 5
+#3F7E00--4 to 4.5
+#5BA829--3.5 to 4
+#9ACD32--3 to 3.5
+#EDD614--2.5 to 3
+*/
+.restro_hr{
+    position: relative;
+    margin-left: -20px;
+    width: 850px;
+}
+.zomato_restro{
+    position: absolute;
+    margin-left: 430px;
+    margin-top: -50px;
+
+}
+.zomato_restro :hover{
+    opacity: .9;
+}
+.restro_image{
+    position: absolute;
+    margin-left: 570px;
+    margin-top: -190px;
+    /*border: 1px solid black;*/
+    width: 410px;
+    height: 200px;
+}
+.restro_image .image1{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+
+}
+.restro_image .image2{
+
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 0px;
+    /*left: 200px;*/
+    width: 200px;
+    height: 200px;
+    margin-left: 5px;
+
+
+}
+.image1, .image2
+{
+   display:inline-block;
+    transition: border-radius 1s ease-out ;
+    overflow: hidden;
+}
+
+
+.restro_image .image1:hover,.restro_image .image2:hover{
+    border-radius: 200px;
+    border: 1px solid #CB202E;
+
+}
+
+#more_details{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#zomato_details{
+    background-image: url("/static/images/restaurants/zomato_newlogo1.jpg");
+    margin-left: 350px;
+    width: 400px;
+    height: 200px;
+    display:block;
+}
+#zomato_details:hover{
+     background-image: url("/static/images/restaurants/zomato_newlogo.jpg");
+}
+
+.hr_attraction{
+    position: relative;
+    margin-top: 40px;
+    margin-left: -40px;
+    width: 1133px;
+    color: #545c6d;
+}
+#attraction_main{
+    font-size: 20px;
+}
+#attraction_list{
+    list-style-type: none;
+}
+#attraction_list .name{
+    margin-left: 200px;
+    font-size: 30px;
+}
+#attraction_list .description{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#attraction_list #pooja{
+    font-size: 20px;
+    margin-left: 300px;
+}
+#attraction_list ol{
+    margin-left: 320px;
+}
+
+
+#figatt {
+    position: relative;
+    /*float: left;*/
+    /*display: inline-block;*/
+    border: 2px solid #404040;
+    margin-left: 0px;
+    font-size: 15px;
+    /*margin-top: -50px;*/
+    text-align: center;
+    /*margin-bottom: 10px;*/
+    /*width: 100%;*/
+    word-wrap: break-word;
+    overflow: hidden;
+
+}
+#figatt img, #figatt1 img{
+    border: 1px solid #404040;
+}
+#figatt figcaption{
+    margin-top: 2px;
+    font-size: 17px;
+}
+#figatt1 {
+    position: relative;
+    /*float: left;*/
+    /*display: inline-block;*/
+    border: 2px solid #404040;
+    margin-left: 0px;
+    font-size: 15px;
+    /*margin-top: -50px;*/
+    text-align: center;
+    /*margin-bottom: 10px;*/
+    /*width: 100%;*/
+    word-wrap: break-word;
+    overflow: hidden;
+
+}
+#figatt1 img{
+    z-index: 2;
+    border-radius: 10000px;
+}
+
+.image_bullet{
+    position: absolute;
+    background-image: url("/static/images/bullet.jpg");
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.image_bullet1{
+    position: absolute;
+    background-image: url("/static/images/bullet.jpg");
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+#ghats{
+    position: absolute;
+    background-image: url("/static/images/attractions/ghats.jpg");
+    width: 800px;
+    height: 600px;
+    margin-top: -600px;
+    /*z-index: 1;*/
+
+}
+#figatt1 img:hover{
+    border-radius: 10000px;
+}
+#figatt1 figcaption{
+    margin-top: 2px;
+    font-size: 17px;
+}
+
+#map{
+    background-image: url("/static/images/workshop1.jpg");
+    width: 1133px;
+    height: 445px;
+    background-attachment: fixed;
+    background-position: right -5px top -40px;
+    background-repeat: no-repeat;
+
+}
+#cover_ghats{
+    /*background-image: url("/static/images/ghats/cover/3.jpg");*/
+    width: 1133px;
+    height: 445px;
+    background-attachment: fixed;
+    background-position: right 108px top 0px;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+/*#cover_ghat1{*/
+    /*background-image: url("/static/images/ghats/cover/3.jpg");*/
+    /*position: absolute;*/
+    /*width: 1133px;*/
+    /*height: 445px;*/
+    /*background-attachment: fixed;*/
+    /*background-position: right 108px top 0px;*/
+    /*background-repeat: no-repeat;*/
+    /*z-index: -1;*/
+/*}*/
+
+#ghats_c, #of_c, #varanasi_c{
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    font-family: Varanasi;
+    -webkit-text-stroke: 1px black;
+     text-shadow:
+            3px 3px 0 #000,
+          -1px -1px 0 #000,
+           1px -1px 0 #000,
+           -1px 1px 0 #000,
+            1px 1px 0 #000;
+
+    /*z-index: 1;*/
+}
+.large_text{
+    font-size: 120px;
+}
+#ghats_c{
+      top: 80px;
+    left:200px;
+}
+
+#of_c{
+    top: 180px;
+    left: 550px;
+
+}
+#varanasi_c{
+        top: 300px;
+        left: 750px;
+}
+
+
+.no{
+    font-size: 25px;
+}
+.ghats_p{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.ghats_head{
+    margin-left: 70px;
+    font-size: 25px;
+    margin-top: 50px;
+
+}
+.ghats_heading{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.ghats_list{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.ghat_description{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*#list_ghats{
+  display:flex;
+  flex-direction:column;
+  align-content:flex-start;
+  flex-wrap:wrap;
+  height:500px;
+  background:hotpink;
+}*/
+/*#list_ghats div{*/
+  /*display:inline-block;*/
+  /*width:100px;*/
+  /*height:100px;*/
+  /*background-color:gray;*/
+/*}*/
+#list_main{
+    margin-left:120px;
+}
+#list_ghats{
+    width: 300px;
+    /*margin-left: 50px;*/
+    display: inline-flex;
+    /*margin-right: 600px;*/
+}
+.ol1 {
+    width: 300px;
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.ol2 {
+        width: 300px;
+    counter-reset: li 30; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.ol3 {
+        width: 300px;
+    counter-reset: li 60; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+ol ol {
+    margin: 0 0 0 2em; /* Add some left margin for inner lists */
+}
+.rounded-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+}
+
+.rounded-list a:hover{
+    background: #eee;
+}
+
+.rounded-list a:hover:before{
+    transform: rotate(360deg);
+}
+
+.rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+#copyright{
+    text-align: center;
+}

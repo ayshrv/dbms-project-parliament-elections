@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block head %}Dashboard{% endblock %}
+
+{% block home %}<li><a href="/dashboard">Home</a></li>{% endblock %}
+{% block logout %}<li><a href="/logout">Log Out</a></li> {% endblock %}
+{% block showresult %}<li><a href="/displayresultchoice">Results</a></li>{% endblock %}
+
+
+{% block content %}
+<!-- {% if election.exists %} -->
+	<!-- {{election.exists}} -->
+	<!-- {% if not election.voting %} -->
+		<!-- {{election.voting}} -->
+		<!-- {% if not user.voter %} -->
+			<!-- {{user.voter}}		 -->
+			<!-- {% block registerelection %}<li><a href="/voter_register">Register for election</a></li>{% endblock %} -->
+		<!-- {% endif %} -->
+	<!-- {% endif %} -->
+<!-- {% endif %} -->
+<!-- <div id="dashboard"> -->
+{{election}}<br>
+{{user}}
+{{message}}
+<br>
+{% if not election.exists %}
+	<p align="center">No Election Is Going On</p>
+{% else %}
+<table id="electiontable" class="center">
+<thead>
+  <tr>
+     <th colspan="2">Current Election</th>
+  </tr>
+ </thead>
+<tr>
+<td>Election ID</td><td>{{election.id}}</td>
+</tr>
+<tr>
+<td>Year</td><td> {{election.year}}</td>
+</tr>
+<tr>
+<td>Teacher Incharge</td><td> {{election.teacher}}</td>
+</tr>
+</table>
+
+<div id="election_info" style="width:400px; margin:0 auto;">
+	<p align="center"><br>
+	{% if not election.voting %}
+		{% if not user.voter %}
+		You are not registered for this election<br>
+			<a href="/voter_register">Register for election</a>
+		{% else %}
+
+		<table id="votertable" class="center">
+			<thead>
+			  <tr>
+			     <th colspan="2">Voter Details</th>
+			  </tr>
+			 </thead>
+			 <tr>
+			<td>Roll No.</td><td>{{user.rollno}}</td>
+			</tr>
+			<tr>
+			<td>Voter ID</td><td>{{user.voterid}}</td>
+			</tr>
+			<tr>
+			<td>Regisered as Candidate</td><td> {{user.candidate}}</td>
+			</tr>
+			<tr>
+			<td>Year</td><td> {{user.year}}</td>
+			</tr>
+		</table>
+		<br>
+			{% if not user.candidate %}
+			<a href="/candidate_register">Register for Candidate</a>
+			{% else %}
+			<table id="candidatetable" class="center">
+				<thead>
+				  <tr>
+				     <th colspan="2">Candidate Details</th>
+				  </tr>
+				 </thead>
+				 <tr>
+				<td>Roll No.</td><td>{{user.rollno}}</td>
+				</tr>
+				<tr>
+				<td>Candidate ID</td><td>{{user.candidateid}}</td>
+				</tr>
+				<tr>
+				<td>Status</td><td> {{user.candidatestatus}}</td>
+				</tr>
+
+		</table>
+			<p id="updatepro"><a href="/updateprofile">Update Your Profile</a></p>
+			{% endif %}
+		{% endif %}
+	{% else %}
+		{% if not user.voter %}
+			You Have Not Registered For This Election.
+		{% else %}
+			{% if not user.voted %}
+			<a href="/vote_cast">Cast a vote</a>
+			{% else %}
+			You have casted your vote. Thank You.
+			{% endif %}
+		{% endif %}
+
+	{% endif %}
+{% endif %}
+</p>
+<br>
+
+</div>
+
+{% endblock %}
