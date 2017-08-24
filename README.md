@@ -18,12 +18,19 @@ candidate, load its resume and participate in voting.
 Project Structure:
 
 ParliamentElections/
+
 ./elections
+
 ./media
+
 ./ParliamentElections
+
 ./static
+
 ./templates
+
 Databasesfiles,sql
+
 manage.py
 
 django version : 1.10.2
