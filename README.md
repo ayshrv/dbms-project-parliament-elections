@@ -1,6 +1,8 @@
 # dbms-project-parliament-elections
 This project is a online voting system which serves the full functionality of Parliament Elections conducted in an institute. It is Django Framework in Python and RDBMS is built in MySQL.
 
+Open readme.pdf and Requirements.pdf for more information.
+
 Parliament Voting System
 
 run “python manage.py runserver” in ParliamentElections/
