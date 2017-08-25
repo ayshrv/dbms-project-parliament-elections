@@ -30,3 +30,4 @@ The details of the project are as follows:
 
 * **MySQL-python** version : *1.2.5*
 
+Refer to [Requirements.pdf](https://github.com/interritus1996/dbms-project-parliament-elections/blob/master/Requirements.pdf) and [Readme.pdf](https://github.com/interritus1996/dbms-project-parliament-elections/blob/master/readme.pdf) for more details.
